@@ -19,7 +19,7 @@ def setup_logger(name='cmssw_interface'):
     else:
         fmt = logging.Formatter(
             fmt = (
-                '\033[33m%(levelname)7s:%(asctime)s:%(module)s:%(lineno)s\033[0m'
+                '\033[33m[%(name)s:%(levelname)s:%(asctime)s:%(module)s:%(lineno)s\033[0m]'
                 + ' %(message)s'
                 ),
             datefmt='%Y-%m-%d %H:%M:%S'
